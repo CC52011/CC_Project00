@@ -1,0 +1,170 @@
+:root {
+  color-scheme: light;
+  font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  width: 370px;
+  margin: 0;
+  color: #17212b;
+  background: #f6f8fb;
+}
+
+.panel {
+  padding: 14px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.badge {
+  min-width: 58px;
+  border-radius: 999px;
+  padding: 4px 8px;
+  color: #42606f;
+  background: #e8f0f3;
+  text-align: center;
+  font-size: 12px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stats div {
+  border: 1px solid #d9e1e8;
+  border-radius: 8px;
+  padding: 8px 6px;
+  background: #fff;
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.stats span {
+  display: block;
+  color: #61717d;
+  font-size: 12px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: #4b5c68;
+  font-size: 13px;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 6px;
+  border: 1px solid #cbd7df;
+  border-radius: 8px;
+  padding: 8px 9px;
+  color: #17212b;
+  background: #fff;
+  font: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00a7a5;
+  box-shadow: 0 0 0 3px rgba(0, 167, 165, 0.15);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.checks {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 12px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.check input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.buttons.wide {
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  border: 1px solid #c8d5dc;
+  border-radius: 8px;
+  padding: 8px 6px;
+  color: #17212b;
+  background: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eef5f6;
+}
+
+.primary {
+  border-color: #00a7a5;
+  color: #fff;
+  background: #00a7a5;
+}
+
+.primary:hover {
+  background: #008f8d;
+}
+
+.danger {
+  color: #a64035;
+}
+
+.message {
+  min-height: 18px;
+  margin: 10px 0 0;
+  color: #61717d;
+  font-size: 12px;
+  line-height: 18px;
+}

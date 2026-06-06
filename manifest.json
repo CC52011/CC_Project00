@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "BOSS 海投助手 v2",
+  "version": "0.2.0",
+  "description": "在 BOSS 搜索页按左侧岗位列表逐个沟通，适配左侧列表加右侧详情页面。",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://www.zhipin.com/*", "https://*.zhipin.com/*"],
+  "action": {
+    "default_title": "BOSS 海投助手 v2",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhipin.com/*", "https://*.zhipin.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

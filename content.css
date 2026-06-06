@@ -1,0 +1,32 @@
+.boss-v2-overlay {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2147483647;
+  width: 292px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #15202b;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+  font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.boss-v2-overlay strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.boss-v2-overlay span {
+  display: block;
+  color: #536471;
+}
+
+.boss-v2-highlight {
+  outline: 3px solid rgba(0, 167, 165, 0.6) !important;
+  outline-offset: 2px !important;
+}

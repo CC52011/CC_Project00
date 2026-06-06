@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BOSS 海投助手 v2</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header>
+        <h1>BOSS 海投助手 v2</h1>
+        <span id="stateBadge" class="badge">未连接</span>
+      </header>
+
+      <section class="stats">
+        <div><strong id="statFound">0</strong><span>发现</span></div>
+        <div><strong id="statSent">0</strong><span>发送</span></div>
+        <div><strong id="statClicked">0</strong><span>点击</span></div>
+        <div><strong id="statSkipped">0</strong><span>跳过</span></div>
+      </section>
+
+      <label>
+        单次最多处理
+        <input id="maxJobs" type="number" min="1" max="1000" step="1" />
+      </label>
+
+      <div class="grid">
+        <label>
+          最小间隔秒
+          <input id="delayMin" type="number" min="1" max="60" step="1" />
+        </label>
+        <label>
+          最大间隔秒
+          <input id="delayMax" type="number" min="1" max="120" step="1" />
+        </label>
+      </div>
+
+      <label>
+        黑名单关键词
+        <textarea id="blacklist" rows="3" placeholder="外包、销售、培训&#10;一行或逗号分隔"></textarea>
+      </label>
+
+      <label>
+        给 HR 的留言
+        <textarea id="hrMessage" rows="5" placeholder="您好，我对这个岗位很感兴趣，已认真看过岗位要求，希望能进一步沟通。"></textarea>
+      </label>
+
+      <div class="checks">
+        <label class="check"><input id="autoNext" type="checkbox" /><span>自动翻页</span></label>
+        <label class="check"><input id="dedupeCompany" type="checkbox" /><span>同公司只处理一次</span></label>
+        <label class="check"><input id="skipSent" type="checkbox" /><span>跳过已发送/已点击记录</span></label>
+      </div>
+
+      <div class="buttons">
+        <button id="scanBtn" type="button">扫描</button>
+        <button id="startBtn" type="button" class="primary">开始</button>
+        <button id="pauseBtn" type="button">暂停</button>
+        <button id="stopBtn" type="button">停止</button>
+      </div>
+
+      <div class="buttons wide">
+        <button id="exportBtn" type="button">导出日志</button>
+        <button id="clearBtn" type="button" class="danger">清空 v2 记录</button>
+      </div>
+
+      <p id="message" class="message">先在 BOSS 搜索页筛好城市和岗位方向。</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
